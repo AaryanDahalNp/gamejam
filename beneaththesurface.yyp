@@ -30,6 +30,7 @@
     {"id":{"name":"obj_falling_spikes","path":"objects/obj_falling_spikes/obj_falling_spikes.yy",},},
     {"id":{"name":"obj_gravity_orb","path":"objects/obj_gravity_orb/obj_gravity_orb.yy",},},
     {"id":{"name":"obj_ground_spike","path":"objects/obj_ground_spike/obj_ground_spike.yy",},},
+    {"id":{"name":"obj_hidden_block","path":"objects/obj_hidden_block/obj_hidden_block.yy",},},
     {"id":{"name":"obj_hud","path":"objects/obj_hud/obj_hud.yy",},},
     {"id":{"name":"obj_invisible_wall","path":"objects/obj_invisible_wall/obj_invisible_wall.yy",},},
     {"id":{"name":"obj_moving_trap","path":"objects/obj_moving_trap/obj_moving_trap.yy",},},
