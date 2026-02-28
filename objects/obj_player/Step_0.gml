@@ -46,3 +46,8 @@ if (y > room_height + 100) {
     global.death_count++;
     room_restart();
 }
+
+if (place_meeting(x, y, obj_spike)) {
+	global.death_count++;
+    room_restart();
+}
