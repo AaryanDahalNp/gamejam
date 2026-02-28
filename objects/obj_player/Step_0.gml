@@ -86,6 +86,25 @@ if (place_meeting(x, y + vsp, obj_undg_block)) {
 y += vsp;
 
 
+
+
+// Horizontal collision
+if (place_meeting(x + hsp, y, obj_moving_trap)) {
+    while (!place_meeting(x + sign(hsp), y, obj_moving_trap)) {
+        x += sign(hsp);
+    }
+    hsp = 0;
+}
+
+// Vertical collision
+if (place_meeting(x, y + vsp, obj_moving_trap)) {
+    while (!place_meeting(x, y + sign(vsp), obj_moving_trap)) {
+        y += sign(vsp);
+    }
+    vsp = 0;
+}
+
+
 // Spike death
 if (place_meeting(x, y, obj_spike)) {
     global.death_count++;

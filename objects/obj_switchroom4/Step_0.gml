@@ -8,5 +8,5 @@ if (place_meeting(x, y, obj_player)) {
     obj_player.gravity_timer = 0;
     
     // then switch room
-    room_goto(Room3);
+    room_goto(Room4);
 }
