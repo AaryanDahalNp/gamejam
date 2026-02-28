@@ -2,32 +2,6 @@ var move_left = keyboard_check(vk_left) || keyboard_check(ord("A"));
 var move_right = keyboard_check(vk_right) || keyboard_check(ord("D"));
 var jump = keyboard_check_pressed(vk_up) || keyboard_check_pressed(vk_space) || keyboard_check_pressed(ord("W"));
 
-// Gravity flip timer countdown
-if (gravity_timer > 0) {
-    gravity_timer--;
-    if (gravity_timer <= 0) {
-        gravity_flipped = false;
-        grv = 0.8;
-        jumpforce = -14;
-    }
-}
-
-// Gravity orb collision
-if (place_meeting(x, y, obj_gravity_orb)) {
-    with (obj_gravity_orb) {
-        instance_destroy();
-    }
-    gravity_flipped = !gravity_flipped;
-    if (gravity_flipped) {
-        grv = -0.8;
-        jumpforce = 14;
-        gravity_timer = 10 * 60;
-    } else {
-        grv = 0.8;
-        jumpforce = -14;
-        gravity_timer = 0;
-    }
-}
 
 // Horizontal movement
 hsp = (move_right - move_left) * walkspeed;
@@ -75,19 +49,25 @@ y += vsp;
 
 // Spike death
 if (place_meeting(x, y, obj_spike)) {
+	audio_play_sound(fah, 1, false);
     global.death_count++;
+	
     room_restart();
 }
 
 // Falling spike death
 if (place_meeting(x, y, obj_falling_spikes)) {
+	audio_play_sound(fah, 1, false);
     global.death_count++;
+	
     room_restart();
 }
 
 // Fell off bottom
 if (y > room_height + 100) {
+	audio_play_sound(fah, 1, false);
     global.death_count++;
+	
     gravity_flipped = false;
     grv = 0.8;
     jumpforce = -14;
@@ -97,7 +77,9 @@ if (y > room_height + 100) {
 
 // Fell off top
 if (y < -100) {
+	audio_play_sound(fah, 1, false);
     global.death_count++;
+	
     gravity_flipped = false;
     grv = 0.8;
     jumpforce = -14;

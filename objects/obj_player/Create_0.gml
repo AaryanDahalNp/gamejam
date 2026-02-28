@@ -6,7 +6,7 @@ jumpforce = -14;
 on_ground = false;
 
 gravity_flipped = false;
-gravity_timer = 0;
+
 
 if (!variable_global_exists("death_count")) {
     global.death_count = 0;
