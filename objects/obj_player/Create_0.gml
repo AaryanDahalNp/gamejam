@@ -1,7 +1,7 @@
 hsp = 0;
 vsp = 0;
 grv = 0.8;
-walkspeed = 5;
+walkspeed = 2.5;
 jumpforce = -14;
 on_ground = false;
 

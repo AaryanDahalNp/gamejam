@@ -1,14 +1,13 @@
 // Step Event
 
-// check if player is below this spike
+// activate when player x is within 20px of spike x
 if (!activated) {
-    // activate when player walks within 100px horizontally below spike
-    if (abs(x - obj_player.x) < 100 && obj_player.y > y) {
+    if (abs(x - obj_player.x) < 128) {
         activated = true;
     }
 }
 
-// once activated start falling
+// once activated fall down
 if (activated) {
     vsp += grv;
     if (vsp > 20) vsp = 20;

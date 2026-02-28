@@ -1,11 +1,11 @@
 {
   "$GMObject":"",
-  "%Name":"obj_undg_block",
+  "%Name":"obj_switchroom3",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_undg_block",
+  "name":"obj_switchroom3",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
@@ -28,10 +28,10 @@
   "properties":[],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
-  "solid":true,
+  "solid":false,
   "spriteId":{
-    "name":"spr_undg_block",
-    "path":"sprites/spr_undg_block/spr_undg_block.yy",
+    "name":"spr_block",
+    "path":"sprites/spr_block/spr_block.yy",
   },
   "spriteMaskId":null,
   "visible":true,

@@ -1,11 +1,12 @@
 {
   "$GMObject":"",
-  "%Name":"obj_undg_block",
+  "%Name":"obj_falling_block",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_undg_block",
+  "name":"obj_falling_block",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
