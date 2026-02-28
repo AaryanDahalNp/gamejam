@@ -9,8 +9,8 @@
   "name":"obj_block",
   "overriddenProperties":[],
   "parent":{
-    "name":"beneaththesurface",
-    "path":"beneaththesurface.yyp",
+    "name":"Objects",
+    "path":"folders/Objects.yy",
   },
   "parentObjectId":null,
   "persistent":false,
