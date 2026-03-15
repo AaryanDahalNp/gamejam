@@ -2,6 +2,12 @@ var move_left = keyboard_check(vk_left) || keyboard_check(ord("A"));
 var move_right = keyboard_check(vk_right) || keyboard_check(ord("D"));
 var jump = keyboard_check_pressed(vk_up) || keyboard_check_pressed(vk_space) || keyboard_check_pressed(ord("W"));
 
+if (keyboard_check(vk_right)) {
+    image_xscale = -1;  // face right
+}
+else if (keyboard_check(vk_left)) {
+    image_xscale = 1; // face left
+}
 
 // Horizontal movement
 hsp = (move_right - move_left) * walkspeed;
@@ -49,19 +55,15 @@ y += vsp;
 
 // Spike death
 if (place_meeting(x, y, obj_spike)) {
-	audio_play_sound(fah, 1, false);
+	with (obj_controller) {
+        audio_play_sound(fah, 1, false);
+	}
     global.death_count++;
 	
     room_restart();
 }
 
-// Falling spike death
-if (place_meeting(x, y, obj_falling_spikes)) {
-	audio_play_sound(fah, 1, false);
-    global.death_count++;
-	
-    room_restart();
-}
+
 
 // Fell off bottom
 if (y > room_height + 100) {

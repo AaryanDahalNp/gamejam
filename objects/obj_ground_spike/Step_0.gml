@@ -17,6 +17,10 @@ if (activated) {
 
 // kill player on collision
 if (place_meeting(x, y, obj_player)) {
+	with (obj_controller) {
+        audio_play_sound(fah, 1, false);
+    }
+
     global.death_count++;
     room_restart();
 }

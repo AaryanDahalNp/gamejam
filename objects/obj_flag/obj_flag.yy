@@ -32,8 +32,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_flag",
-    "path":"sprites/spr_flag/spr_flag.yy",
+    "name":"red_flag",
+    "path":"sprites/red_flag/red_flag.yy",
   },
   "spriteMaskId":null,
   "visible":true,

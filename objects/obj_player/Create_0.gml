@@ -4,9 +4,9 @@ grv = 0.8;
 walkspeed = 5;
 jumpforce = -14;
 on_ground = false;
-
+depth = -1000;
 gravity_flipped = false;
-
+image_xscale=-1;
 
 if (!variable_global_exists("death_count")) {
     global.death_count = 0;

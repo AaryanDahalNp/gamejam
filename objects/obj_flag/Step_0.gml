@@ -1,6 +1,7 @@
 // Step Event
 if (place_meeting(x, y, obj_player)) {
     show_win = true;
+	show_fake_text=false;
     obj_player.hsp = 0;
     obj_player.vsp = 0;
     obj_player.grv = 0; // freeze player

@@ -1,7 +1,7 @@
 // pulse animation
 pulse++;
-image_xscale = 1 + sin(degtorad(pulse * 4)) * 0.15;
-image_yscale = 1 + sin(degtorad(pulse * 4)) * 0.15;
+image_xscale = 1 + sin(degtorad(pulse * 4)) * 0.1;
+image_yscale = 1 + sin(degtorad(pulse * 4)) * 0.1;
 
 // when player touches orb
 if (place_meeting(x, y, obj_player)) {
